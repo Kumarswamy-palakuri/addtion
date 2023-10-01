@@ -12,26 +12,34 @@
 input{
     height:4vh;
     margin: 8px;
-    padding-left: 15px;
+    padding: 10px 15px;
     border: 3px solid red;
 }
-ul{
+.btn{
     display: flex;
     width: 80%;
     margin: 20px auto;
     font-size: 30px;
-    padding: 4px
+    padding: 4px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 button{
-    width: 40%;
+    min-width: 40%;
     height: 5vh;
-    margin: 0px 5px;
+    margin: 5px 5px;
+    padding: 2px 8px;
+    border: 2px black dotted;
+    border-radius: 10px;
 }
 button:hover{
-    width: 40%;
-    height: 5vh;
-    margin: 0px 8px;
-    padding: 2px;
     background-color: red;
     color: aliceblue;
 }
+@media only screen and (max-width: 400px) {
+    button{
+        min-width: 80%;
+        height: 5vh;
+        margin: 5px 5px;
+    }
+  }
